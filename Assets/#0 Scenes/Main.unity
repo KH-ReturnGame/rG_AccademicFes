@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  PlayerHP: 0
+  PlayerHP: 3
   _EndUI: {fileID: 62000446}
 --- !u!50 &961317582
 Rigidbody2D:

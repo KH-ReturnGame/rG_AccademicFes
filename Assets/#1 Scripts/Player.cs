@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class Player : MonoBehaviour
         {
             Time.timeScale = 0;
             _EndUI.SetActive(true);
+            StartCoroutine(Restart());
+            PlayerHP = 1;
         }
     }
 
@@ -41,5 +44,20 @@ public class Player : MonoBehaviour
         {
             PlayerHP -= 1;
         }
+    }
+
+    IEnumerator Restart()
+    {
+        Debug.Log("??");
+
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(3f);
+
+        Debug.Log("??");
+        
+        Time.timeScale = 0;
+        SceneManager.LoadScene("Main", LoadSceneMode.Single);
+
+        yield return null;
     }
 }
