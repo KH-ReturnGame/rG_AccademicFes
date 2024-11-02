@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     AudioSource myaudio;
     public AudioClip Dieaudio;
     GameObject poopManager;
+    public GameObject[] Hearts;
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.tag == "Poop")
         {
+            Destroy(Hearts[PlayerHP - 1]);
             PlayerHP -= 1;
             myaudio.Play();
         }
