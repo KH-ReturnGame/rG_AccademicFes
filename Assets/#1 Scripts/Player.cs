@@ -17,6 +17,19 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        Move();
+
+        if(PlayerHP == 0)
+        {
+            Time.timeScale = 0;
+            _EndUI.SetActive(true);
+            StartCoroutine(Restart());
+            PlayerHP = 1;
+        }
+    }
+
+    void Move()
+    {
         // 좌우 방향 입력 받기
         float horizontalInput = Input.GetAxis("Horizontal"); // -1에서 1까지의 값 반환
         Vector3 movement = new Vector3(horizontalInput, 0, 0) * moveSpeed * Time.deltaTime;
@@ -28,14 +41,6 @@ public class Player : MonoBehaviour
         Vector3 clampedPosition = transform.position;
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, -8.0f, 8.0f); // x 좌표 제한 (화면 경계 설정)
         transform.position = clampedPosition;
-
-        if(PlayerHP == 0)
-        {
-            Time.timeScale = 0;
-            _EndUI.SetActive(true);
-            StartCoroutine(Restart());
-            PlayerHP = 1;
-        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -51,7 +56,7 @@ public class Player : MonoBehaviour
         Debug.Log("??");
 
         Time.timeScale = 1;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5.0f);
 
         Debug.Log("??");
         
