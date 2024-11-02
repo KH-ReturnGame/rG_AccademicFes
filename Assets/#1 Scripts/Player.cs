@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         moveSpeed = 7.5f;
-        PlayerHP = 3;
+        PlayerHP = 5;
     }
 
     void Update()
