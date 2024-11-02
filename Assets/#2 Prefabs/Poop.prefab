@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4793878936862543877}
   - component: {fileID: 4793878936862543874}
-  - component: {fileID: 8568521467328496820}
   - component: {fileID: 5086541272670752120}
   - component: {fileID: 1407897738518718303}
+  - component: {fileID: 8568521467328496820}
   m_Layer: 0
   m_Name: Poop
   m_TagString: Poop
@@ -87,18 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8568521467328496820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4793878936862543875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0b63b5bf87d7ef49b9e801469e48c80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &5086541272670752120
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -336,3 +324,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8568521467328496820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4793878936862543875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b63b5bf87d7ef49b9e801469e48c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

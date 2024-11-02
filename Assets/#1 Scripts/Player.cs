@@ -2,9 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public float moveSpeed = 5.0f; // 이동 속도
+    public float moveSpeed; // 이동 속도
+    public int PlayerHP;
+
+    void Start()
+    {
+        moveSpeed = 7.5f;
+        PlayerHP = 3;
+    }
 
     void Update()
     {
@@ -19,5 +26,18 @@ public class PlayerController : MonoBehaviour
         Vector3 clampedPosition = transform.position;
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, -8.0f, 8.0f); // x 좌표 제한 (화면 경계 설정)
         transform.position = clampedPosition;
+
+        if(PlayerHP == 0)
+        {
+            Time.timeScale = 0;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Poop")
+        {
+            PlayerHP -= 1;
+        }
     }
 }
