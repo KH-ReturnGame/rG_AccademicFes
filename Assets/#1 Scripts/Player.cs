@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
         {
             _EndUI.SetActive(true);
             StartCoroutine(Restart());
-            PlayerHP = 1;
+            PlayerHP = 10000;
         }
     }
 
@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         poopAudioSource.clip = Dieaudio;
         poopAudioSource.Play();
         
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(12.25f);
 
         Debug.Log("??");
         
