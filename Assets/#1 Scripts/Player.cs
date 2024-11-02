@@ -8,11 +8,17 @@ public class Player : MonoBehaviour
     public float moveSpeed; // 이동 속도
     public int PlayerHP;
     public GameObject _EndUI;
+    AudioSource myaudio;
+    public AudioClip Dieaudio;
+    GameObject poopManager;
 
     void Start()
     {
         moveSpeed = 7.5f;
         PlayerHP = 5;
+        myaudio = GetComponent<AudioSource>();
+
+        poopManager = GameObject.Find("PoopManager");
     }
 
     void Update()
@@ -21,7 +27,6 @@ public class Player : MonoBehaviour
 
         if(PlayerHP == 0)
         {
-            Time.timeScale = 0;
             _EndUI.SetActive(true);
             StartCoroutine(Restart());
             PlayerHP = 1;
@@ -48,19 +53,20 @@ public class Player : MonoBehaviour
         if(other.gameObject.tag == "Poop")
         {
             PlayerHP -= 1;
+            myaudio.Play();
         }
     }
 
     IEnumerator Restart()
     {
-        Debug.Log("??");
-
-        Time.timeScale = 1;
+        AudioSource poopAudioSource = poopManager.GetComponent<AudioSource>();
+        poopAudioSource.clip = Dieaudio;
+        poopAudioSource.Play();
+        
         yield return new WaitForSeconds(5.0f);
 
         Debug.Log("??");
         
-        Time.timeScale = 0;
         SceneManager.LoadScene("Main", LoadSceneMode.Single);
 
         yield return null;

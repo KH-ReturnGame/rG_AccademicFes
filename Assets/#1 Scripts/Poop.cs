@@ -5,10 +5,12 @@ using UnityEngine;
 public class Poop : MonoBehaviour
 {
     BoxCollider2D boxCollider2D;
+    AudioSource myaudio;
     // Start is called before the first frame update
     void Start()
     {
         boxCollider2D = GetComponent<BoxCollider2D>();
+        myaudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,7 +23,8 @@ public class Poop : MonoBehaviour
     {
         if(other.gameObject.tag == "ground" || other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            myaudio.Play();
+            Destroy(gameObject, myaudio.clip.length);
         }
     }
 }
