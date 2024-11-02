@@ -42,4 +42,9 @@ public class CreatePoop : MonoBehaviour
 
         yield return null;
     }
+
+    public void StopPoop()
+    {
+        this.enabled = false;
+    }
 }

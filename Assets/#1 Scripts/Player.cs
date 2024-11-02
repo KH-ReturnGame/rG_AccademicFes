@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
         {
             _EndUI.SetActive(true);
             StartCoroutine(Restart());
+            CreatePoop _createPoop = poopManager.GetComponent<CreatePoop>();
+            _createPoop.StopPoop();
             PlayerHP = 10000;
         }
     }
