@@ -25,8 +25,11 @@ public class CreatePoop : MonoBehaviour
         // 장애물이 생성될 랜덤 x 위치 설정
         float randomX = Random.Range(-spawnRangeX, spawnRangeX);
         Vector3 spawnPosition = new Vector3(randomX, transform.position.y, 0);
+
+        float randomRotationZ = Random.Range(0f, 360f); // Z축을 기준으로 회전
+        Quaternion randomRotation = Quaternion.Euler(0, 0, randomRotationZ);
         
         // 장애물 생성
-        Instantiate(Poop, spawnPosition, Quaternion.identity);
+        Instantiate(Poop, spawnPosition, randomRotation);
     }
 }
