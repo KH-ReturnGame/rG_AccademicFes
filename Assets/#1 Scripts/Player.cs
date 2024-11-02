@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed; // 이동 속도
     public int PlayerHP;
+    public GameObject _EndUI;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
         if(PlayerHP == 0)
         {
             Time.timeScale = 0;
+            _EndUI.SetActive(true);
         }
     }
 
