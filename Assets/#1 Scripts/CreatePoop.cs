@@ -45,6 +45,7 @@ public class CreatePoop : MonoBehaviour
 
     public void StopPoop()
     {
+        StopAllCoroutines();
         this.enabled = false;
     }
 }
