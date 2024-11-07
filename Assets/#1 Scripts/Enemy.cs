@@ -28,11 +28,24 @@ public class Enemy : MonoBehaviour
         if(other.tag == "bullet")
         {
             enemyHP -= 1;
+            if(enemyHP > 0)
+            {
+                StartCoroutine(Damage());
+            }
         }
         else if(other.tag == "Player")
         {
             
         }
+    }
+
+    IEnumerator Damage()
+    {
+        spriteRenderer.color = Color.red;
+
+        yield return new WaitForSeconds(0.25f);
+        
+        spriteRenderer.color = Color.white;
     }
 
     IEnumerator Die()
