@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private int Iscool = 0;
     public GameObject Bullet_obj;
+    int HP = 5;
 
     void Start()
     {
@@ -36,6 +37,10 @@ public class Player : MonoBehaviour
         {
             StartCoroutine(FireBullet());
         }
+        if(HP <= 0)
+        {
+            StartCoroutine(Die());
+        }
     }
 
     IEnumerator FireBullet()
@@ -53,5 +58,13 @@ public class Player : MonoBehaviour
     IEnumerator Die()
     {
         yield return null;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "bullet_enemy")
+        {
+            HP -= 1;
+        }
     }
 }

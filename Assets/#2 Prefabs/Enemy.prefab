@@ -151,4 +151,6 @@ MonoBehaviour:
   enemyHP: 2
   deadSprite: {fileID: 21300000, guid: 753707abd062efb48b604634c484a410, type: 3}
   bulletPrefab: {fileID: 742292256367807928, guid: ad7c7988804833f40bc32b9674e6ad57, type: 3}
+  bulletPrefabBig: {fileID: 742292256367807928, guid: d4674236fdd0fd948b27b988ff253b87, type: 3}
   fireRate: 1.5
+  type: 0

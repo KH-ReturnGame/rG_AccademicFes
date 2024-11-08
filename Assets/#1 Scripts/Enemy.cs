@@ -5,11 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float enemyHP;
-    public Sprite deadSprite;  // Assign this in the Inspector to the sprite for when the enemy dies
+    public Sprite deadSprite;
     private SpriteRenderer spriteRenderer;
-    public GameObject bulletPrefab;  // Assign this in the Inspector to a Bullet prefab
+    public GameObject bulletPrefab;
+    public GameObject bulletPrefabBig;
     public float fireRate = 1.5f;
     // Start is called before the first frame update
+    public int type; 
     void Start()
     {
         enemyHP = 2;
@@ -66,10 +68,34 @@ public class Enemy : MonoBehaviour
 
     IEnumerator FireBullets()
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        if(type == 1)
+        {
+            Vector3 spawnPosition = transform.position + new Vector3(0, -0.5f, 0);
 
-        yield return new WaitForSeconds(fireRate);
-        StartCoroutine(FireBullets());
+            GameObject bullet = Instantiate(bulletPrefab, spawnPosition, Quaternion.identity);
+
+            yield return new WaitForSeconds(fireRate);
+            StartCoroutine(FireBullets());
+        }
+        else if(type == 2)
+        {
+            Vector3 spawnPositionL = transform.position + new Vector3(0.5f, -0.5f, 0);
+            Vector3 spawnPositionR = transform.position + new Vector3(-0.5f, -0.5f, 0);
     
+            GameObject bulletL = Instantiate(bulletPrefab, spawnPositionL, Quaternion.identity);
+            GameObject bulletR = Instantiate(bulletPrefab, spawnPositionR, Quaternion.identity);
+    
+            yield return new WaitForSeconds(fireRate);
+            StartCoroutine(FireBullets());
+        }
+        else if(type == 3)
+        {
+            Vector3 spawnPosition = transform.position + new Vector3(0, -0.75f, 0);
+    
+            GameObject bullet = Instantiate(bulletPrefabBig, spawnPosition, Quaternion.identity);
+    
+            yield return new WaitForSeconds(fireRate);
+            StartCoroutine(FireBullets());
+        }
     }
 }
