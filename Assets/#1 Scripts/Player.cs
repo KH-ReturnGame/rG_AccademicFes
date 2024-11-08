@@ -10,12 +10,14 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private int Iscool = 0;
     public GameObject Bullet_obj;
+    public GameObject DeadUI;
     int HP = 5;
     private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -41,6 +43,7 @@ public class Player : MonoBehaviour
         if(HP <= 0)
         {
             Die();
+            HP = 100;
         }
     }
 
@@ -58,7 +61,8 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        
+        Time.timeScale = 0;
+        DeadUI.SetActive(true);
     }
 
     void OnTriggerEnter2D(Collider2D other)
