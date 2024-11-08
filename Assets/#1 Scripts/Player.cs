@@ -70,7 +70,6 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.tag == "bullet_enemy")
         {
-            HP -= 1;
             StartCoroutine(Damage());
         }
     }
@@ -80,7 +79,8 @@ public class Player : MonoBehaviour
         if(HP > 0 && HP <=5)
         {
             spriteRenderer.color = Color.red;
-            Destroy(Hearts[HP - 1]);
+            HP -= 1;
+            Destroy(Hearts[HP]);
 
             yield return new WaitForSeconds(0.25f);
 
