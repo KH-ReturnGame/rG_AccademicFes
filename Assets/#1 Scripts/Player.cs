@@ -49,4 +49,9 @@ public class Player : MonoBehaviour
         
         yield return null;
     }
+
+    IEnumerator Die()
+    {
+        yield return null;
+    }
 }

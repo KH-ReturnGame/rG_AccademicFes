@@ -7,11 +7,15 @@ public class Enemy : MonoBehaviour
     public float enemyHP;
     public Sprite deadSprite;  // Assign this in the Inspector to the sprite for when the enemy dies
     private SpriteRenderer spriteRenderer;
+    public GameObject bulletPrefab;  // Assign this in the Inspector to a Bullet prefab
+    public float fireRate = 1.5f;
     // Start is called before the first frame update
     void Start()
     {
         enemyHP = 2;
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        StartCoroutine(FireBullets());
     }
 
     // Update is called once per frame
@@ -35,7 +39,8 @@ public class Enemy : MonoBehaviour
         }
         else if(other.tag == "Player")
         {
-            
+            Player _player = other.GetComponent<Player>();
+            _player.StartCoroutine(Die());
         }
     }
 
@@ -57,5 +62,14 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
 
         Destroy(gameObject);
+    }
+
+    IEnumerator FireBullets()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+
+        yield return new WaitForSeconds(fireRate);
+        StartCoroutine(FireBullets());
+    
     }
 }
