@@ -9,7 +9,7 @@ public class EnemySpwaner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpwanType = Random.Range(0,11);
+        SpwanType = Random.Range(0,10);
         StartCoroutine(SpawnEnemy());
     }
 
@@ -24,8 +24,13 @@ public class EnemySpwaner : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         Instantiate(EnemyFlight[SpwanType], transform.position, Quaternion.identity);
         
-        SpwanType = Random.Range(0,11);
+        SpwanType = Random.Range(0,10);
 
         yield return null;
+    }
+
+    public void DoSpawn()
+    {
+        StartCoroutine(SpawnEnemy());
     }
 }
