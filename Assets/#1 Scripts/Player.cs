@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private int Iscool = 0;
     public GameObject Bullet_obj;
     public GameObject DeadUI;
+    public GameObject[] Hearts;
     int HP = 5;
     private SpriteRenderer spriteRenderer;
 
@@ -77,6 +78,7 @@ public class Player : MonoBehaviour
     IEnumerator Damage()
     {
         spriteRenderer.color = Color.red;
+        Destroy(Hearts[HP - 1]);
 
         yield return new WaitForSeconds(0.25f);
         
