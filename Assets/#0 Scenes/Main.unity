@@ -169,15 +169,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyFlight:
   - {fileID: 3130733472774029503, guid: 52012901d34cc0445a4d0e1dcd2b3c06, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3130733472774029503, guid: be7ff687adee85147acca4755314f9c2, type: 3}
+  - {fileID: 3130733472774029503, guid: a67e6c74866c14441aa2c214b1684de5, type: 3}
+  - {fileID: 3130733472774029503, guid: c74f5398530869b4c84158765896c463, type: 3}
+  - {fileID: 3130733472774029503, guid: 90a7cae6196700243ada9ba44416fb25, type: 3}
+  - {fileID: 3130733472774029503, guid: 9561b7c9afc58204d9b1aef75c79219e, type: 3}
+  - {fileID: 3130733472774029503, guid: f8eafc1244f120648b6b21dcdff5d652, type: 3}
+  - {fileID: 3130733472774029503, guid: f8bfa2cb3729e9d409664d42784b8486, type: 3}
+  - {fileID: 3130733472774029503, guid: 6c1ad4294f09e014da3067f92a084b6d, type: 3}
+  - {fileID: 3130733472774029503, guid: dd2327de80801ac4d9ad34a9b57f7004, type: 3}
 --- !u!1 &1890206157
 GameObject:
   m_ObjectHideFlags: 0

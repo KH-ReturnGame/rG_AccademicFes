@@ -9,7 +9,7 @@ public class EnemySpwaner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpwanType = 0;
+        SpwanType = Random.Range(0,11);
         StartCoroutine(SpawnEnemy());
     }
 
