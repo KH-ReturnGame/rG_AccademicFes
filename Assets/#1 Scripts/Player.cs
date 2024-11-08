@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     private int Iscool = 0;
     public GameObject Bullet_obj;
     int HP = 5;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -39,7 +40,7 @@ public class Player : MonoBehaviour
         }
         if(HP <= 0)
         {
-            StartCoroutine(Die());
+            Die();
         }
     }
 
@@ -55,16 +56,26 @@ public class Player : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator Die()
+    void Die()
     {
-        yield return null;
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "bullet_enemy")
+        if(other.gameObject.tag == "bullet_enemy")
         {
             HP -= 1;
+            StartCoroutine(Damage());
         }
+    }
+
+    IEnumerator Damage()
+    {
+        spriteRenderer.color = Color.red;
+
+        yield return new WaitForSeconds(0.25f);
+        
+        spriteRenderer.color = Color.white;
     }
 }
