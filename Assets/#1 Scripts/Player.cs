@@ -77,11 +77,14 @@ public class Player : MonoBehaviour
 
     IEnumerator Damage()
     {
-        spriteRenderer.color = Color.red;
-        Destroy(Hearts[HP - 1]);
+        if(HP > 0 && HP <=5)
+        {
+            spriteRenderer.color = Color.red;
+            Destroy(Hearts[HP - 1]);
 
-        yield return new WaitForSeconds(0.25f);
-        
-        spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.25f);
+
+            spriteRenderer.color = Color.white;
+        }
     }
 }
