@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
         else if(other.tag == "Player")
         {
             Player _player = other.GetComponent<Player>();
-            _player.StartCoroutine(Die());
+            _player.Die();
         }
     }
 

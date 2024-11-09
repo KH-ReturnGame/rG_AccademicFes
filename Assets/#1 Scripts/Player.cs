@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
         yield return null;
     }
 
-    void Die()
+    public void Die()
     {
         Time.timeScale = 0;
         DeadUI.SetActive(true);
