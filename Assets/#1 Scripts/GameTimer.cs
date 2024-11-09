@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameTimer : MonoBehaviour
 {
     public Text timerText; // UI 텍스트 참조
-    private float elapsedTime = 0.0f; // 경과 시간
+    public float elapsedTime = 0.0f; // 경과 시간
 
     void Start()
     {

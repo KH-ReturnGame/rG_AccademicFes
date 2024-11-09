@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public float moveSpeed; // 이동 속도
     public int PlayerHP;
     public GameObject _EndUI;
+    public Text timerTxt;
     AudioSource myaudio;
     public AudioClip Dieaudio;
     GameObject poopManager;
@@ -33,6 +35,12 @@ public class Player : MonoBehaviour
             CreatePoop _createPoop = poopManager.GetComponent<CreatePoop>();
             _createPoop.StopPoop();
             PlayerHP = 10000;
+            GameObject game_manager = GameObject.FindGameObjectWithTag("manager");
+            float last_time = game_manager.GetComponent<GameTimer>().elapsedTime;
+            // 시간을 "00:00" 형식으로 업데이트
+            int minutes = Mathf.FloorToInt(last_time / 60F);
+            int seconds = Mathf.FloorToInt(last_time % 60F);
+            timerTxt.text = string.Format("{0:00}분 {1:00}초 생존!!", minutes, seconds);
         }
     }
 
@@ -55,6 +63,7 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.tag == "Poop")
         {
+            if (Hearts == null) return;
             Destroy(Hearts[PlayerHP - 1]);
             PlayerHP -= 1;
             myaudio.Play();

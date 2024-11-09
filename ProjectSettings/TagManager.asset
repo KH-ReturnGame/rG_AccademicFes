@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Poop
   - ground
+  - manager
   layers:
   - Default
   - TransparentFX
