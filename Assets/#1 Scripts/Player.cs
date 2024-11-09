@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player : MonoBehaviour
     public GameObject Bullet_obj;
     public GameObject DeadUI;
     public GameObject[] Hearts;
+    public Text timerTxt;
     int HP = 5;
     private SpriteRenderer spriteRenderer;
 
@@ -64,6 +66,11 @@ public class Player : MonoBehaviour
     {
         Time.timeScale = 0;
         DeadUI.SetActive(true);
+        float time = GetComponent<GameTimer>().elapsedTime;
+        // 시간을 "00:00" 형식으로 업데이트
+        int minutes = Mathf.FloorToInt(time / 60F);
+        int seconds = Mathf.FloorToInt(time % 60F);
+        timerTxt.text = string.Format("{0:00}분 {1:00}초 생존!!", minutes, seconds);
     }
 
     void OnTriggerEnter2D(Collider2D other)
