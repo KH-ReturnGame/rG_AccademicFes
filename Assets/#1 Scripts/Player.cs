@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.tag == "Poop")
         {
-            if (Hearts == null) return;
+            if (PlayerHP == 0) return;
             Destroy(Hearts[PlayerHP - 1]);
             PlayerHP -= 1;
             myaudio.Play();
