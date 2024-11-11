@@ -22,10 +22,12 @@ public class DB_Manager : MonoBehaviour
     {
         string id_pass = idpass.text.Trim();
         string[] s = id_pass.Split('_');
-        Debug.Log(GetComponent<Player>().last_time.ToString());
+        Debug.Log(GetComponent<Player>().last_time.ToString(CultureInfo.InvariantCulture));
         if (s.Length == 2)
         {
-            StartCoroutine(SetRank(1, GetComponent<Player>().last_time.ToString(), s[0], s[1]));
+            string ss = GetComponent<Player>().last_time.ToString(CultureInfo.InvariantCulture);
+            string[] ss2 = ss.Split('.');
+            StartCoroutine(SetRank(1,ss2[0]+'/'+ss2[1] , s[0], s[1]));
         }
         else
         {
@@ -43,7 +45,7 @@ public class DB_Manager : MonoBehaviour
 
         // SetValue
         string value = game + "_" + data;
-        yield return StartCoroutine(SetValue(data));
+        yield return StartCoroutine(SetValue(value));
         
         yield return StartCoroutine(GetComponent<Player>().Restart());
     }
