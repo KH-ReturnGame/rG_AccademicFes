@@ -13,7 +13,7 @@ public class GoogleData
 
 public class DB_Manager : MonoBehaviour
 {
-    const string URL = "https://script.google.com/macros/s/AKfycbxO-1D34Uh8E0ZnuBpTSpEU3JJ8pCQQuYBxjSwBmMwxrZGFTmvQFu0JxQD23B7EUENJ/exec";
+    const string URL = "https://script.google.com/macros/s/AKfycbzTfYNEbhWZZfBAGuAYJXdoUUirLw5_XlL3DqCVkKpjP9ETLxLvw3cdS7NyXZD4N75m/exec";
     public GoogleData GD;
     string id, pass;
     public InputField idpass;
@@ -22,12 +22,9 @@ public class DB_Manager : MonoBehaviour
     {
         string id_pass = idpass.text.Trim();
         string[] s = id_pass.Split('_');
-        Debug.Log(GetComponent<Player>().last_time.ToString(CultureInfo.InvariantCulture));
         if (s.Length == 2)
         {
-            string ss = GetComponent<Player>().last_time.ToString(CultureInfo.InvariantCulture);
-            string[] ss2 = ss.Split('.');
-            StartCoroutine(SetRank(1,ss2[0]+'/'+ss2[1] , s[0], s[1]));
+            StartCoroutine(SetRank(1,GetComponent<Player>().last_time.ToString(CultureInfo.InvariantCulture), s[0], s[1]));
         }
         else
         {
