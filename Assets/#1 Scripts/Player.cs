@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public AudioClip Dieaudio;
     GameObject poopManager;
     public GameObject[] Hearts;
+    public float last_time;
 
     void Start()
     {
@@ -31,12 +32,11 @@ public class Player : MonoBehaviour
         if(PlayerHP == 0)
         {
             _EndUI.SetActive(true);
-            StartCoroutine(Restart());
             CreatePoop _createPoop = poopManager.GetComponent<CreatePoop>();
             _createPoop.StopPoop();
             PlayerHP = 10000;
             GameObject game_manager = GameObject.FindGameObjectWithTag("manager");
-            float last_time = game_manager.GetComponent<GameTimer>().elapsedTime;
+            last_time = game_manager.GetComponent<GameTimer>().elapsedTime;
             // 시간을 "00:00" 형식으로 업데이트
             int minutes = Mathf.FloorToInt(last_time / 60F);
             int seconds = Mathf.FloorToInt(last_time % 60F);
@@ -63,14 +63,14 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.tag == "Poop")
         {
-            if (PlayerHP == 0) return;
+            Debug.Log(PlayerHP);
             Destroy(Hearts[PlayerHP - 1]);
             PlayerHP -= 1;
             myaudio.Play();
         }
     }
 
-    IEnumerator Restart()
+    public IEnumerator Restart()
     {
         AudioSource poopAudioSource = poopManager.GetComponent<AudioSource>();
         poopAudioSource.clip = Dieaudio;
