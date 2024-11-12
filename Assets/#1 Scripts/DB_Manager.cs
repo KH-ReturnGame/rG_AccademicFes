@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Globalization;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,11 +18,14 @@ public class DB_Manager : MonoBehaviour
     public GoogleData GD;
     string id, pass;
     public InputField idpass;
+    public Button btn;
 
     public void SetRankBtn()
     {
         string id_pass = idpass.text.Trim();
         string[] s = id_pass.Split('_');
+        btn.interactable = false;
+        idpass.interactable = false;
         if (s.Length == 2)
         {
             StartCoroutine(SetRank(1,GetComponent<Player>().last_time.ToString(CultureInfo.InvariantCulture), s[0], s[1]));
@@ -40,10 +44,22 @@ public class DB_Manager : MonoBehaviour
         // Login
         yield return StartCoroutine(Login(id, pass));
 
+        Debug.Log(GD.msg);
+        if (GD.msg == "로그인 실패")
+        {
+            idpass.text = "로그인 실패";
+            btn.interactable = true;
+            idpass.interactable = true;
+            yield break;
+        }
+
         // SetValue
-        string value = game + "_" + data;
-        yield return StartCoroutine(SetValue(value));
-        
+        yield return StartCoroutine(GetValue(game));
+        if (float.Parse(GD.value) < float.Parse(data))
+        {
+            string value = game + "_" + data;
+            yield return StartCoroutine(SetValue(value));
+        }
         yield return StartCoroutine(GetComponent<Player>().Restart());
     }
 
@@ -111,7 +127,7 @@ public class DB_Manager : MonoBehaviour
 
             if (GD.order == "getValue")
             {
-                Debug.Log("dd");
+                Debug.Log("");
             }
         }
         yield return new WaitForSeconds(0f);
