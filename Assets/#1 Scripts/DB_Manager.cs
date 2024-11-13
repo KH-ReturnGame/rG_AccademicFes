@@ -55,7 +55,8 @@ public class DB_Manager : MonoBehaviour
 
         // SetValue
         yield return StartCoroutine(GetValue(game));
-        if (float.Parse(GD.value) < float.Parse(data))
+        Debug.Log(GD.value + " / " + float.Parse(data));
+        if ((GD.value == "" ? 0f : float.Parse(GD.value)) < float.Parse(data))
         {
             string value = game + "_" + data;
             yield return StartCoroutine(SetValue(value));
