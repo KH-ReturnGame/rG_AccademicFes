@@ -24,6 +24,7 @@ public class DB_Manager : MonoBehaviour
     public void SetRankBtn()
     {
         string id_pass = idpass.text.Trim();
+        idpass.text = "";
         string[] s = id_pass.Split('_');
         btn.interactable = false;
         idpass.interactable = false;
