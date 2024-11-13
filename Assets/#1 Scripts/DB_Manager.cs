@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Globalization;
+using TMPro;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
@@ -17,7 +18,7 @@ public class DB_Manager : MonoBehaviour
     const string URL = "https://script.google.com/macros/s/AKfycbzTfYNEbhWZZfBAGuAYJXdoUUirLw5_XlL3DqCVkKpjP9ETLxLvw3cdS7NyXZD4N75m/exec";
     public GoogleData GD;
     string id, pass;
-    public InputField idpass;
+    public TMP_InputField idpass;
     public Button btn;
 
     public void SetRankBtn()
