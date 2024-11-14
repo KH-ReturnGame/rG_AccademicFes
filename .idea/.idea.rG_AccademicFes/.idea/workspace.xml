@@ -7,15 +7,12 @@
     <list default="true" id="74532fa3-7422-4fbf-8e3e-70bc19694a09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pretendard-SemiBold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pretendard-SemiBold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.data.br" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.data.br" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.framework.js.br" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.wasm.br" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/GUID.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/ProjectVersion.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebGL Builds/dependencies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.framework.js.br" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.framework.js.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.wasm.br" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.wasm.br" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/GUID.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/GUID.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebGL Builds/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectwebgl.zip" beforeDir="false" afterPath="$PROJECT_DIR$/connectwebgl.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
