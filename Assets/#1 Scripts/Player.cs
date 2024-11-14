@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,7 +10,7 @@ public class Player : MonoBehaviour
     public float moveSpeed; // 이동 속도
     public int PlayerHP;
     public GameObject _EndUI;
-    public Text timerTxt;
+    public TMP_Text timerTxt;
     AudioSource myaudio;
     public AudioClip Dieaudio;
     GameObject poopManager;

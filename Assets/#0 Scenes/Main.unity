@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &62000447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,7 +1206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &708766999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,7 +3067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2033628577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3558,7 +3558,7 @@ PrefabInstance:
     - target: {fileID: 7251442240940377373, guid: fbbd9bc24e173894a92b72abe5994229, type: 3}
       propertyPath: timerTxt
       value: 
-      objectReference: {fileID: 1224411066}
+      objectReference: {fileID: 1697937524}
     - target: {fileID: 7251442240940377373, guid: fbbd9bc24e173894a92b72abe5994229, type: 3}
       propertyPath: Hearts.Array.size
       value: 5
