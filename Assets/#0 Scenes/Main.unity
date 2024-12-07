@@ -1140,7 +1140,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1340721455}
         m_TargetAssemblyTypeName: DB_Manager, Assembly-CSharp
-        m_MethodName: SetRankBtn
+        m_MethodName: SetBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3513,6 +3513,10 @@ PrefabInstance:
       propertyPath: btn
       value: 
       objectReference: {fileID: 689197510}
+    - target: {fileID: 4190080650782802170, guid: fbbd9bc24e173894a92b72abe5994229, type: 3}
+      propertyPath: id_
+      value: 
+      objectReference: {fileID: 1599124566}
     - target: {fileID: 4190080650782802170, guid: fbbd9bc24e173894a92b72abe5994229, type: 3}
       propertyPath: idpass
       value: 
