@@ -8,8 +8,28 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/DB_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/DB_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#5 ETC/WebGLSupport.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/google-services-desktop.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/google-services-desktop.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.connect.share/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.data.br" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.framework.js.br" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/Build/WebGL Builds.wasm.br" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/GUID.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/ProjectVersion.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/fullscreen-button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/progress-bar-empty-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/progress-bar-empty-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/progress-bar-full-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/progress-bar-full-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/unity-logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/unity-logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/TemplateData/webgl-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/dependencies.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebGL Builds/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,30 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Standalone Player.Start Unity.executor": "Debug",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Dodge__the__Poop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Standalone Player.Start Unity.executor&quot;: &quot;Debug&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dodge__the__Poop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\sslgh\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\sslgh\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\sslgh\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/lgh/Library/Application Support/JetBrains/Rider2024.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/lgh/Library/Application Support/JetBrains/Rider2024.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/lgh/Library/Application Support/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../[2] finish project/Unity/ReturnGame/d/AcademicFes.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../build/afes/test/ddong.app/Contents/MacOS/AcademicFes" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../build/afes/test/ddong.app/Contents/MacOS" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -61,7 +81,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.18f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -69,7 +89,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity 2021.3.18f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -107,6 +127,8 @@
       <updated>1731452506338</updated>
       <workItem from="1731452507483" duration="1253000" />
       <workItem from="1733576593602" duration="4581000" />
+      <workItem from="1733584329837" duration="1830000" />
+      <workItem from="1733796564440" duration="5978000" />
     </task>
     <servers />
   </component>

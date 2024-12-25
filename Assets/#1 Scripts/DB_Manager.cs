@@ -190,7 +190,7 @@ public class DB_Manager : MonoBehaviour
                     {
                         var db = FirebaseDatabase.GetInstance("https://returngame-d8a65-default-rtdb.firebaseio.com/");
                         var reference = db.RootReference;
-                        var rankRef = db.GetReference("Game1_Rank");
+                        var rankRef = db.GetReference("Game3_Rank");
 
                         // 먼저 읽기
                         rankRef.GetValueAsync().ContinueWithOnMainThread(readTask => {
@@ -230,7 +230,7 @@ public class DB_Manager : MonoBehaviour
                                     {
                                         // 새로운 점수로 업데이트
                                         // 단순히 score만 업데이트하고 싶다면 Child("score").SetValueAsync(score)로 가능
-                                        reference.Child("Game1_Rank").Child(existingKey).Child("score").SetValueAsync(score)
+                                        reference.Child("Game3_Rank").Child(existingKey).Child("score").SetValueAsync(score)
                                             .ContinueWithOnMainThread(writeTask => {
                                                 if (writeTask.IsFaulted) {
                                                     Debug.LogError("Failed to update data: " + writeTask.Exception);
@@ -245,9 +245,9 @@ public class DB_Manager : MonoBehaviour
                                     // 기존 사용자가 없다면 새로 데이터 추가
                                     Rank newRank = new Rank(id, score);
                                     string json = JsonUtility.ToJson(newRank);
-                                    string key = reference.Child("Game1_Rank").Push().Key;
+                                    string key = reference.Child("Game3_Rank").Push().Key;
 
-                                    reference.Child("Game1_Rank").Child(key).SetRawJsonValueAsync(json)
+                                    reference.Child("Game3_Rank").Child(key).SetRawJsonValueAsync(json)
                                         .ContinueWithOnMainThread(writeTask => {
                                             if (writeTask.IsFaulted) {
                                                 Debug.LogError("Failed to write data: " + writeTask.Exception);
