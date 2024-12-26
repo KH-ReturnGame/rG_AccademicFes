@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74532fa3-7422-4fbf-8e3e-70bc19694a09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/DB_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/DB_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/google-services-desktop.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/google-services-desktop.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLSupport/Editor/Postprocessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebGLSupport/Editor/Postprocessor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/Detail/Support.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/Detail/Support.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/Events/KeyboardEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/Events/KeyboardEvent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/UIToolKit/WebGLInputManipulator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/UIToolKit/WebGLInputManipulator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/UIToolKit/WebGLUIToolkitTextField.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WebGLSupport/WebGLInput/UIToolKit/WebGLUIToolkitTextField.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/Rank_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/Rank_Manager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/#1 Scripts/DB_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.6/Editor/BurstDisassembler.Core.ARM64.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.6/Tests/Runtime/Shared/035-Functions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.6/Tests/Runtime/Shared/082-PartialManaged.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/SpriteDrawUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/SiblingOrderChangesLayout.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/InputField/TouchInputFieldTests.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -111,6 +113,7 @@
       <workItem from="1733576593602" duration="4581000" />
       <workItem from="1733584329837" duration="1830000" />
       <workItem from="1733796564440" duration="5978000" />
+      <workItem from="1735136251618" duration="931000" />
     </task>
     <servers />
   </component>

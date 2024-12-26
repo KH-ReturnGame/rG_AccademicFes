@@ -1,11 +1,8 @@
 using System.Collections.Generic;
-using System.Globalization;
 using UnityEngine;
 using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
-using TMPro;
-using UnityEngine.UI;
 
 public class Rank_Manager : MonoBehaviour
 {
