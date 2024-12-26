@@ -3255,7 +3255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1(?) \uC2DC\uAC04\uB9CC\uC5D0 \uB9CC\uB4E0 \uAC1C\uB775\uC791"
+  m_text: "3(?) \uC2DC\uAC04\uB9CC\uC5D0 \uB9CC\uB4E0 \uAC1C\uB775\uC791"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4951f0321ac8140a1a8dab9b988dc4fa, type: 2}
   m_sharedMaterial: {fileID: -9072510167425914012, guid: 4951f0321ac8140a1a8dab9b988dc4fa, type: 2}
