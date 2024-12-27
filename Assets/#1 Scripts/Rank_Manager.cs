@@ -3,6 +3,7 @@ using UnityEngine;
 using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
+using UnityEngine.SceneManagement;
 
 public class Rank_Manager : MonoBehaviour
 {
@@ -59,7 +60,6 @@ public class Rank_Manager : MonoBehaviour
                                             existingKey = data.Key;
                                             Debug.Log("이미 존재하는 사용자: " + existingName + ", 현재 점수: " + existingScore);
                                             break;
-
                                         }
                                     }
                                 }
@@ -117,9 +117,16 @@ public class Rank_Manager : MonoBehaviour
                     else
                     {
                         Debug.LogError("Could not resolve all Firebase dependencies: " + task.Result);
+                        
                     }
                 });
                 break;
         }
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene("Main", LoadSceneMode.Single);
+    }
 }
+
+

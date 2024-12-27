@@ -13,12 +13,6 @@ public class Poop : MonoBehaviour
         myaudio = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "ground" || other.gameObject.tag == "Player")

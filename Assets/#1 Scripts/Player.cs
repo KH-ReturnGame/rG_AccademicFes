@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
         poopAudioSource.clip = Dieaudio;
         poopAudioSource.Play();
         
-        yield return new WaitForSeconds(12.25f);
+        //yield return new WaitForSeconds(12.25f);
 
         Debug.Log("??");
         

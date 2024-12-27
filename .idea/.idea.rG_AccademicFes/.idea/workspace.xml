@@ -7,6 +7,7 @@
     <list default="true" id="74532fa3-7422-4fbf-8e3e-70bc19694a09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/Poop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/Poop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/Rank_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/Rank_Manager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,6 +115,7 @@
       <workItem from="1733584329837" duration="1830000" />
       <workItem from="1733796564440" duration="5978000" />
       <workItem from="1735136251618" duration="931000" />
+      <workItem from="1735240345526" duration="5084000" />
     </task>
     <servers />
   </component>
