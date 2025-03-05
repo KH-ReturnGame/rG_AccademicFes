@@ -17,7 +17,7 @@ public class CreatePoop : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer > 30f)
+        if(timer > 15f)
         {
             StartCoroutine(SpawnObstacle());
             timer = 0;
