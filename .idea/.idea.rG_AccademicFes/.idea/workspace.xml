@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74532fa3-7422-4fbf-8e3e-70bc19694a09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.rG_AccademicFes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#0 Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/Poop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/Poop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/Rank_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/Rank_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/#1 Scripts/CreatePoop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/#1 Scripts/CreatePoop.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
 }</component>
   <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../build/afes/test/ddong.app/Contents/MacOS/AcademicFes" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../build/afes/new/ddong.app/Contents/MacOS/AcademicFes" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../build/afes/test/ddong.app/Contents/MacOS" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -116,6 +114,7 @@
       <workItem from="1733796564440" duration="5978000" />
       <workItem from="1735136251618" duration="931000" />
       <workItem from="1735240345526" duration="5084000" />
+      <workItem from="1741230342405" duration="1823000" />
     </task>
     <servers />
   </component>
