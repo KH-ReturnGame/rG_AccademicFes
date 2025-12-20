@@ -36,4 +36,9 @@ public class UIMove : MonoBehaviour
     {
         horizontalInput = 1;
     }
+
+    public void StopMove()
+    {
+        horizontalInput = 0;
+    }
 }
